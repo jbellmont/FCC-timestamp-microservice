@@ -23,7 +23,7 @@ app.get("/api/:date", function (req, res) {
 
   /* 
     If date provided is in a number format (e.g. milliseconds), instead of a 
-    string.
+    string, convert to number.
   */
   if (Number(dateParam)) {
     dateParam = Number(dateParam);
